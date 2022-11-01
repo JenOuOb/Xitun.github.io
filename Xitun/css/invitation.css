@@ -1,0 +1,341 @@
+
+
+.schedule {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+.schedule #invitext {
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 22;
+}
+
+.schedule #information {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule #information .dateimg {
+    width: 30%;
+    height: 458px;
+    /* background-color: #3C7CA0; */
+}
+
+.schedule #information .datetext {
+    width: 40%;
+    height: 458px;
+    margin-left: 75px;
+    height: 458px;
+    background-color: rgba(233, 211, 152, 0.4588235294);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* NEWS */
+#newstext {
+    display: inline-block;
+    padding: 20px 20px 0 20px;
+    color: #f4eeee;
+    font-size:40px;
+    font-weight: bolder;
+
+}
+
+.btn-top {
+    width: 100px;
+    height: 25px;
+    background-color: #F2B90F;
+    border-radius: 5px;
+}
+
+.btn-top a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-top:hover {
+    background-color: rgb(225, 158, 50);
+    color: white;
+}
+
+
+.schedule #information .datetext .date {
+    font-size: 22px;
+    font-weight: bold;margin-bottom: 10px;display: block;
+}
+.schedule #information .datetext .title {
+    font-size: 18px;
+    font-weight: bolder;
+    display:block;
+    padding-left: 10px;
+}
+
+.schedule #information .datetext .description {
+    margin-bottom: 30px;
+    display: block;
+     padding-left: 10px;
+}
+
+.schedule #iconCar {
+    width: 50%;
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    transform: translateY(180%);
+    z-index: 22;
+}
+
+.schedule #lineimg {
+    width: 20%;
+    position: absolute;
+    left: -5%;
+    bottom: -12%;
+}
+
+.schedule #mailtext {
+    width: 385px;
+    height: 140px;
+    background-color: #048ABF;
+    color: white;
+    margin-left: 66.5%;
+    margin-top: 10%;
+    position: relative;
+    padding: 20px;
+}
+
+.schedule #mailtext .img_active {
+    position: absolute;
+    right: 10%;
+    top: -12%;
+    font-size: 42px;
+}
+
+.schedule #mailtext p,
+.schedule #mailtext a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.schedule #mailtext .img_music {
+    position: absolute;
+    right: 40%;
+    bottom: -20%;
+}
+
+.footer-box {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-box .logo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+}
+
+.footer-box .logo img {
+    width: 300px;
+}
+
+.footer-box .link {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.footer-box .link a:nth-child(1) {
+    display: inline-block;
+    margin: 22px 20px;
+}
+
+.footer-box .link a:nth-child(2) {
+    display: inline-block;
+    margin: 25px 20px;
+}
+
+.footer-box .link a:nth-child(3) {
+    display: inline-block;
+    margin: 20px;
+}
+
+.footer-box .link a:nth-child(4) {
+    display: inline-block;
+    margin: 24px 20px;
+}
+
+.footer-box .text {
+    width: 100%;
+    height: 30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-box .text :nth-child(1) {
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-box .text #foot {
+    width: 180px;
+    padding-left: 50px;
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 1815px) {
+    .schedule {
+        height: 100%;
+        position: relative;
+    }
+
+    .schedule #information {
+        height: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    .schedule #information .dateimg {
+        width: 75%;
+        height: 350px;
+        /* height: 1000px; */
+        background-color: #edca57;
+        z-index: 99;
+        text-align: center;
+    }
+
+    .schedule #information .datetext {
+        width: 75%;
+        height: 350px;
+        margin-left: 0px;
+        z-index: 99;
+    }
+
+    .schedule #iconCar {
+        width: 80%;
+        height: 400px;
+        position: absolute;
+        left: -10%;
+        bottom: -5%;
+    }
+
+    .schedule #lineimg {
+        width: 40%;
+        position: absolute;
+        left: -5%;
+        bottom: -45%;
+    }
+
+    .schedule #mailtext {
+        width: 75%;
+        height: 180px;
+        margin-left: 0;
+        margin-top: 0;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .schedule #mailtext .img_music {
+        position: absolute;
+        left: 10%;
+        bottom: -15%;
+    }
+
+    .footer-box {
+        margin-top: 750px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .schedule #invitext {
+        text-align: right;
+    }
+
+    .footer-box .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-box .text :nth-child(1) {
+        width: 80%;
+    }
+
+    .footer-box .text #foot {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .schedule #iconCar {
+        position: absolute;
+        left: 10%;
+        bottom: -10%;
+        transform: translateY(180%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-box {
+        margin-top: 700px;
+    }
+
+    .footer-box .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .footer-box .logo img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+    .footer-box {
+        margin-top: 500px;
+    }
+
+    .schedule #mailtext {
+        margin-top: 20%;
+
+    }
+    .schedule #information .datetext .title {
+        font-size: 16px;
+    }
+    .schedule #information .datetext .date {
+        font-size: 16px;
+    }
+    .schedule #information .datetext .description { font-size: 16px;}
+    .schedule #information .datetext .description2 {
+        margin-bottom: 25px;display: block;
+    }
+}
+
+/*# sourceMappingURL=invitation.css.map */

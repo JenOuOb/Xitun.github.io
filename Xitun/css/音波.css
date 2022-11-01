@@ -1,0 +1,128 @@
+.detail-rba {
+  position: relative;
+}
+
+.detail-left-down{
+  position: relative;
+}
+
+
+.loader {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 175px;
+  height: 100px;
+}
+.loader span {
+  display: block;
+  background: #ccc;
+  width: 7px;
+  height: 10%;
+  border-radius: 14px;
+  margin-right: 5px;
+  float: left;
+  margin-top: 25%;
+}
+.loader span:last-child {
+  margin-right: 0px;
+}
+.loader span:nth-child(1) {
+  -webkit-animation: load 2.5s 1.4s infinite linear;
+          animation: load 2.5s 1.4s infinite linear;
+}
+.loader span:nth-child(2) {
+  -webkit-animation: load 2.5s 1.2s infinite linear;
+          animation: load 2.5s 1.2s infinite linear;
+}
+.loader span:nth-child(3) {
+  -webkit-animation: load 2.5s 1s infinite linear;
+          animation: load 2.5s 1s infinite linear;
+}
+.loader span:nth-child(4) {
+  -webkit-animation: load 2.5s 0.8s infinite linear;
+          animation: load 2.5s 0.8s infinite linear;
+}
+.loader span:nth-child(5) {
+  -webkit-animation: load 2.5s 0.6s infinite linear;
+          animation: load 2.5s 0.6s infinite linear;
+}
+.loader span:nth-child(6) {
+  -webkit-animation: load 2.5s 0.4s infinite linear;
+          animation: load 2.5s 0.4s infinite linear;
+}
+.loader span:nth-child(7) {
+  -webkit-animation: load 2.5s 0.2s infinite linear;
+          animation: load 2.5s 0.2s infinite linear;
+}
+.loader span:nth-child(8) {
+  -webkit-animation: load 2.5s 0s infinite linear;
+          animation: load 2.5s 0s infinite linear;
+}
+.loader span:nth-child(9) {
+  -webkit-animation: load 2.5s 0.2s infinite linear;
+          animation: load 2.5s 0.2s infinite linear;
+}
+.loader span:nth-child(10) {
+  -webkit-animation: load 2.5s 0.4s infinite linear;
+          animation: load 2.5s 0.4s infinite linear;
+}
+.loader span:nth-child(11) {
+  -webkit-animation: load 2.5s 0.6s infinite linear;
+          animation: load 2.5s 0.6s infinite linear;
+}
+.loader span:nth-child(12) {
+  -webkit-animation: load 2.5s 0.8s infinite linear;
+          animation: load 2.5s 0.8s infinite linear;
+}
+.loader span:nth-child(13) {
+  -webkit-animation: load 2.5s 1s infinite linear;
+          animation: load 2.5s 1s infinite linear;
+}
+.loader span:nth-child(14) {
+  -webkit-animation: load 2.5s 1.2s infinite linear;
+          animation: load 2.5s 1.2s infinite linear;
+}
+.loader span:nth-child(15) {
+  -webkit-animation: load 2.5s 1.4s infinite linear;
+          animation: load 2.5s 1.4s infinite linear;
+}
+
+@-webkit-keyframes load {
+  0% {
+    background: #ccc;
+    margin-top: 25%;
+    height: 10%;
+  }
+  50% {
+    background: #444;
+    height: 100%;
+    margin-top: 0%;
+  }
+  100% {
+    background: #ccc;
+    height: 10%;
+    margin-top: 25%;
+  }
+}
+
+@keyframes load {
+  0% {
+    background: #ccc;
+    margin-top: 25%;
+    height: 10%;
+  }
+  50% {
+    background: #444;
+    height: 100%;
+    margin-top: 0%;
+  }
+  100% {
+    background: #ccc;
+    height: 10%;
+    margin-top: 25%;
+  }
+}/*# sourceMappingURL=音波.css.map */
