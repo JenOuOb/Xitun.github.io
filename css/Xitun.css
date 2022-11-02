@@ -245,11 +245,6 @@ body::-webkit-scrollbar {
   z-index: 200;
   border: none;
 }
-@media (max-width: 375px) {
-  #myBtn {
-    display: none;
-  }
-}
 
 #myBtn:hover {
   background-color: #555;
@@ -258,6 +253,11 @@ body::-webkit-scrollbar {
 #Gotop-photo {
   width: 82px;
   height: 127px;
+}
+@media (max-width: 375px) {
+  #Gotop-photo {
+    display: none;
+  }
 }
 
 .bg-noise {

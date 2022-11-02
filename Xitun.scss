@@ -284,9 +284,7 @@ body::-webkit-scrollbar {
     background: none;
     z-index: 200;
     border: none;
-    @include phone-375(){
-        display: none;
-    }
+
 }
 
 #myBtn:hover {
@@ -296,6 +294,9 @@ body::-webkit-scrollbar {
 #Gotop-photo {
     width: 82px;
     height: 127px;
+    @include phone-375(){
+        display: none;
+    }
 }
 
 // 雜訊
