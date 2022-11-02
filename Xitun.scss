@@ -834,16 +834,11 @@ nav {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -47%);
+        transform: translate(-50%, -52%);
 
         @include event-3() {
-            transform: translate(-50%, -49%);
+            transform: translate(-50%, -55%);
         }
-
-        @include event-3() {
-            transform: translate(-50%, -49%);
-        }
-
         .state {
             perspective: 1000px;
             position: relative;
@@ -868,8 +863,8 @@ nav {
             }
 
             @include event-3() {
-                width: 250px;
-                height: 125px;
+                width: 300px;
+                height: 150px;
             }
 
             .itemwrap {
@@ -896,8 +891,8 @@ nav {
                 }
 
                 @include event-3() {
-                    width: 250px;
-                    height: 125px;
+                    width: 300px;
+                    height: 150px;
                 }
 
                 .item {
@@ -930,8 +925,8 @@ nav {
                     }
 
                     @include event-3() {
-                        width: 250px;
-                        height: 125px;
+                        width: 300px;
+                        height: 150px;
                     }
                 }
 
@@ -951,7 +946,7 @@ nav {
                     }
 
                     @include event-3() {
-                        transform: rotateX(0deg) translateZ(62.5px);
+                        transform: rotateX(0deg) translateZ(75px);
                     }
                 }
 
@@ -971,7 +966,7 @@ nav {
                     }
 
                     @include event-3() {
-                        transform: rotateX(270deg) translateZ(62.5px);
+                        transform: rotateX(270deg) translateZ(75px);
                     }
 
                 }
@@ -992,7 +987,7 @@ nav {
                     }
 
                     @include event-3() {
-                        transform: rotateX(180deg) translateZ(62.5px);
+                        transform: rotateX(180deg) translateZ(75px);
                     }
                 }
 
@@ -1012,7 +1007,7 @@ nav {
                     }
 
                     @include event-3() {
-                        transform: rotateX(90deg) translateZ(62.5px);
+                        transform: rotateX(90deg) translateZ(75px);
                     }
                 }
 
