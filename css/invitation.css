@@ -223,7 +223,7 @@
         width: 75%;
         height: 350px;
         /* height: 1000px; */
-        background-color: #edca57;
+        background-color: rgba(233, 211, 152, 0.4588235294);
         z-index: 99;
         text-align: center;
     }
