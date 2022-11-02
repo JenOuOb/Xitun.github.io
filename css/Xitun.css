@@ -759,8 +759,18 @@ nav .navall .nav-menu .navli-2:hover {
 .rotate-scroll .scroll-content .mover-1 {
   height: 100%;
 }
+.rotate-scroll .scroll-content .mover-2 {
+  height: 100%;
+}
+.rotate-scroll .scroll-content .mover-3 {
+  height: 100%;
+}
+.rotate-scroll .scroll-content .mover-4 {
+  height: 100%;
+}
 .rotate-scroll .scroll-content #sceoll-photo {
   height: 100%;
+  z-index: -20;
 }
 
 .event {
