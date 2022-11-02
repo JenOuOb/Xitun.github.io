@@ -237,39 +237,53 @@
 
 /* 中間字體 */
 .about-center-content {
-  width: calc(648 * var(--pv));
+  width: 100%;
   position: relative;
   top: calc(8 * var(--pv));
   left: calc(553 * var(--pv));
 }
 
+
+
 @media (max-width: 768px) {
   .about-center-content {
-    top: calc(9 * var(--mu) * var(--ph));
+    top: calc(-20 * var(--mu) * var(--ph));
     left: calc(24 * var(--mu) * var(--ph));
-    transform: translateX(-80%);
+    transform: translateX(-32%);
   }
 }
 
 .about-text {
-  width: calc(1000 * var(--pv));
+  width: 45%;
   height: calc(61 * var(--pv));
   position: absolute;
-  letter-spacing: 14px;
+  letter-spacing: 5px;
   top: calc(830 * var(--pv));
   left: calc(288 * var(--pv));
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #024059;
   cursor: pointer;
 }
-@media (max-width: 1480px) {
+
+@media (max-width: 1660px) {
+  .about-text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about-text {
+    width: 50%;
+    font-size: 1rem;
+  }
+}
+/* @media (max-width: 1024px) {
   .about-text {
     display: flex;
     height: calc(183 * var(--pv));
     width: calc(1000 * var(--pv));
   }
-}
+} */
 @media (max-width: 768px) {
   .about-text {
     font-size: 24px;
@@ -282,7 +296,7 @@
     top: calc(372 * var(--mu) * var(--ph));
     left: calc(187 * var(--mu) * var(--ph));
     line-height: 20px;
-    letter-spacing: 25px;
+    letter-spacing: 14px;
     font-weight: 400;
   }
 }
@@ -300,10 +314,8 @@
 @media (max-width: 768px) {
   .about-link a img {
     display: flex;
-    width: calc(21 * var(--mu) * var(--ph));
-    height: calc(24 * var(--mu) * var(--ph));
-    top: calc(405 * var(--mu) * var(--ph));
-    left: calc(239 * var(--mu) * var(--ph));
+    width: calc(15 * var(--mu) * var(--ph));
+    height: calc(23 * var(--mu) * var(--ph));
   }
 }
 
@@ -318,13 +330,9 @@
 @media (max-width: 768px) {
   .about-link {
     display: flex;
-    width: calc(179 * var(--mu) * var(--ph));
-    height: calc(30 * var(--mu) * var(--ph));
-    top: calc(493 * var(--mu) * var(--ph));
-    left: calc(194 * var(--mu) * var(--ph));
-    align-content: space-between;
-    justify-content: space-between;
-    align-items: stretch;
+   
+    top: calc(483 * var(--mu) * var(--ph));
+    left: calc(240 * var(--mu) * var(--ph));
   }
 }
 
@@ -393,20 +401,21 @@
 }
 
 @media (max-width: 768px) {
-  #modal-origin {
-    width: 300px;
+  #modal-origin{
+    width: 375px;
     height: 337.5px;
     background-color: #024059;
     color: #FFFFFF;
     position: relative;
-    margin: 15% auto;
+    top: 437px;
+    left: -35px;
     display: none;
   }
 }
 
 #modal-experience {
-  width: 600px;
-  height: 337.5px;
+  width: 650px;
+  height: 500px;
   background-color: #024059;
   color: #FFFFFF;
   position: relative;
@@ -415,9 +424,22 @@
   overflow-y: scroll;
 }
 
+@media (max-width: 768px) {
+  #modal-experience{
+    width: 375px;
+    height: 337.5px;
+    background-color: #024059;
+    color: #FFFFFF;
+    position: relative;
+    top: 437px;
+    left: -35px;
+    display: none;
+  }
+} 
+
 #modal-cooperation {
-  width: 600px;
-  height: 337.5px;
+  width: 650px;
+  height: 500px;
   background-color: #024059;
   color: #FFFFFF;
   position: relative;
@@ -425,6 +447,20 @@
   display: none;
   overflow-y: scroll;
 }
+
+@media (max-width: 768px) {
+  #modal-cooperation{
+    width: 375px;
+    height: 337.5px;
+    background-color: #024059;
+    color: #FFFFFF;
+    position: relative;
+    top: 437px;
+    left: -35px;
+    display: none;
+  }
+} 
+
 
 .modal-close-btn {
   position: absolute;
@@ -435,12 +471,36 @@
 }
 
 .modal-title {
-  padding-top: 16%;
-  padding-left: 14.5%;
-  font-size: 24px;
+  padding-top: 5%;
+  padding-left: 9.5%;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .modal-title{
+    padding: 9% 5%;
+  line-height: 2rem;
+  } 
+}
+.modal-content {
+  padding: 4% 10%;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
-.modal-content {
-  padding: 3% 15%;
+@media (max-width: 768px) {
+  .modal-content{
+    padding: 3% 5%;
   line-height: 2rem;
+  } 
+}
+
+#btn-experience{
+  padding: 0px 60px ;
+}
+
+
+@media (max-width: 1024px) {
+  #btn-experience {
+    padding: 0px 25px ;
+  }
 }
