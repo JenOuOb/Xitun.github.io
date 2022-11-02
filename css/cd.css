@@ -1,0 +1,355 @@
+.box111 {
+    width: calc(1920 * var(--pv));
+    height: calc(1080 * var(--pv));
+    background-color: aqua;
+}
+
+.music {
+    position: relative;
+    background-image: url(../cd/icon、裝飾圖/cd-back_工作區域\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ep {
+    margin: auto;
+    margin-top: 700px;
+}
+
+ @media (max-width: 1500px) {
+    .ep {
+        margin-top: 500px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .ep {
+        margin-top: 400px;
+    }
+
+}
+@media (max-width: 1000px) {
+    .ep {
+        margin-top: 320px;
+    }
+
+}
+@media (max-width: 900px) {
+    .ep {
+        margin-top: 330px;
+    }
+
+}
+@media (max-width: 780px) {
+    .ep {
+        margin-top: 250px;
+    }
+
+}
+
+
+
+
+
+
+.album {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    position: relative;
+    transform-origin: center -200px;
+    animation: run 5s linear infinite;
+    margin-bottom: 0px;
+    animation-delay: 2s;
+    animation-duration: alternate;
+    /* margin-bottom: 20px; */
+}
+
+@media (max-width: 1200px) {
+    .album {
+        width: 150px;
+        height: 150px;
+        transform-origin: center -150px;
+    }
+}
+
+@media (max-width: 880px) {
+    .album {
+        width: 100px;
+        height: 100px;
+        transform-origin: center -100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .album {
+        width: 75px;
+        height: 75px;
+        transform-origin: center -75px;
+    }
+}
+
+
+@keyframes run {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    25% {
+        transform: rotateY(90deg) rotateX(18deg);
+    }
+
+    50% {
+        transform: rotateY(180deg) rotateX(0deg);
+    }
+
+    75% {
+        transform: rotateY(270deg) rotateX(18deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(0deg);
+    }
+}
+
+.album1 {
+    animation-delay: 0.1s;
+}
+
+.album2 {
+    animation-delay: 0.2s;
+}
+
+.album3 {
+    animation-delay: 0.3s;
+}
+
+.album4 {
+    animation-delay: 0.4s;
+}
+
+.album5 {
+    animation-delay: 0.5s;
+}
+
+.album6 {
+    animation-delay: 0.6s;
+}
+
+.album a {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: calc(50% - 400px);
+    left: calc(50% - 400px);
+
+}
+
+@media (max-width: 1200px) {
+    .album a {
+        width: 600px;
+        height: 600px;
+        top: calc(50% - 300px);
+        left: calc(50% - 300px);
+    }
+}
+
+@media (max-width: 880px) {
+    .album a {
+        width: 400px;
+        height: 400px;
+        top: calc(50% - 200px);
+        left: calc(50% - 200px);
+    }
+}
+
+@media (max-width: 450px) {
+    .album a {
+        width: 300px;
+        height: 300px;
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+    }
+}
+
+.album a:nth-child(1) {
+    background-size: cover;
+    height: 80px;
+    transform: translateZ(400px);
+}
+
+.album a:nth-child(2) {
+    background-size: cover;
+    height: 80px;
+    transform: translateX(-400px) rotateY(-90deg);
+
+}
+
+.album a:nth-child(3) {
+    background-size: contain;
+    transform: translateY(-320px) rotateX(90deg);
+}
+
+.album a:nth-child(4) {
+    background-size: contain;
+    transform: translateY(-400px) rotateX(-90deg);
+}
+
+.album a:nth-child(5) {
+    background-size: contain;
+    height: 80px;
+    transform: translateX(400px) rotateY(90deg);
+
+}
+
+.album a:nth-child(6) {
+    background-size: contain;
+    height: 80px;
+    transform: translateZ(-400px) rotateY(-180deg);
+
+}
+
+@media (max-width: 1200px) {
+    .album a:nth-child(1) {
+        height: 60px;
+        transform: translateZ(300px);
+    }
+
+    .album a:nth-child(2) {
+        background-size: cover;
+        height: 60px;
+        transform: translateX(-300px) rotateY(-90deg);
+
+    }
+
+    .album a:nth-child(3) {
+        background-size: contain;
+        transform: translateY(-240px) rotateX(90deg);
+    }
+
+    .album a:nth-child(4) {
+        background-size: contain;
+        transform: translateY(-300px) rotateX(-90deg);
+    }
+
+    .album a:nth-child(5) {
+        background-size: contain;
+        height: 60px;
+        transform: translateX(300px) rotateY(90deg);
+
+    }
+
+    .album a:nth-child(6) {
+        background-size: contain;
+        height: 60px;
+        transform: translateZ(-300px) rotateY(-180deg);
+
+    }
+}
+
+@media (max-width: 880px) {
+    .album a:nth-child(1) {
+        height: 40px;
+        transform: translateZ(200px);
+    }
+
+    .album a:nth-child(2) {
+        background-size: cover;
+        height: 40px;
+        transform: translateX(-200px) rotateY(-90deg);
+
+    }
+
+    .album a:nth-child(3) {
+        background-size: contain;
+        transform: translateY(-160px) rotateX(90deg);
+    }
+
+    .album a:nth-child(4) {
+        background-size: contain;
+        transform: translateY(-200px) rotateX(-90deg);
+    }
+
+    .album a:nth-child(5) {
+        background-size: contain;
+        height: 40px;
+        transform: translateX(200px) rotateY(90deg);
+
+    }
+
+    .album a:nth-child(6) {
+        background-size: contain;
+        height: 40px;
+        transform: translateZ(-200px) rotateY(-180deg);
+
+    }
+}
+
+@media (max-width: 450px) {
+    .album a:nth-child(1) {
+        height: 30px;
+        transform: translateZ(150px);
+    }
+
+    .album a:nth-child(2) {
+        background-size: cover;
+        height: 30px;
+        transform: translateX(-150px) rotateY(-90deg);
+
+    }
+
+    .album a:nth-child(3) {
+        background-size: contain;
+        transform: translateY(-120px) rotateX(90deg);
+    }
+
+    .album a:nth-child(4) {
+        background-size: contain;
+        transform: translateY(-150px) rotateX(-90deg);
+    }
+
+    .album a:nth-child(5) {
+        background-size: contain;
+        height: 30px;
+        transform: translateX(150px) rotateY(90deg);
+
+    }
+
+    .album a:nth-child(6) {
+        background-size: contain;
+        height: 30px;
+        transform: translateZ(-150px) rotateY(-180deg);
+
+    }
+}
+
+
+
+.red-line img {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    white-space: nowrap;
+    transform: translate(1400px, -1000px);
+    overflow: hidden;
+
+}
+
+.yellow-line {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    transform: translate(-400px, 100px);
+    overflow: hidden;
+}
+
+.more img {
+    position: absolute;
+    height: 50px;
+    bottom: 10%;
+    left: 70%;
+
+}
