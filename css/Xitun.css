@@ -32,8 +32,8 @@ body::-webkit-scrollbar {
   z-index: 9999;
   top: 0;
   left: 0;
-  -webkit-animation: load 0.5s linear 1s;
-          animation: load 0.5s linear 1s;
+  -webkit-animation: load 0.5s linear 3s;
+          animation: load 0.5s linear 3s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -244,6 +244,11 @@ body::-webkit-scrollbar {
   background: none;
   z-index: 200;
   border: none;
+}
+@media (max-width: 375px) {
+  #myBtn {
+    display: none;
+  }
 }
 
 #myBtn:hover {

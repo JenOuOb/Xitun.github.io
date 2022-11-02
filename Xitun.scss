@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     z-index: 9999;
     top: 0;
     left: 0;
-    animation: load .5s linear 1s; // 條整loadding時間的地方
+    animation: load .5s linear 3s; // 條整loadding時間的地方
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     pointer-events: none;
@@ -284,6 +284,9 @@ body::-webkit-scrollbar {
     background: none;
     z-index: 200;
     border: none;
+    @include phone-375(){
+        display: none;
+    }
 }
 
 #myBtn:hover {
