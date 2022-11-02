@@ -461,7 +461,7 @@ nav .navall .nav-menu .navli-2:hover {
   left: 0;
   transform: translateY(-100%);
   transition: 0.5s;
-  z-index: 50;
+  z-index: 999;
 }
 .ham-menu .ham-menu-nav {
   display: flex;
@@ -510,7 +510,7 @@ nav .navall .nav-menu .navli-2:hover {
   top: 50%;
   right: 20px;
   width: 30px;
-  transform: translate(0, -50%);
+  transform: translate(0, -60%);
 }
 @media (max-width: 1520px) {
   .ham-btn {

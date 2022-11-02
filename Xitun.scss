@@ -532,20 +532,13 @@ nav {
     }
 }
 
-
-
-
-
-
-
-
 .ham-btn {
     display: none;
     position: absolute;
     top: 50%;
     right: 20px;
     width: 30px;
-    transform: translate(0, -50%);
+    transform: translate(0, -60%);
     @include nav-icon(){
         display: block;
     }
