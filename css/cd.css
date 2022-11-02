@@ -9,6 +9,7 @@
     background-image: url(../cd/icon、裝飾圖/cd-back_工作區域\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: hidden;
 }
 
 .ep {
