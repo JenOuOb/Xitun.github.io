@@ -133,13 +133,13 @@
                 </div>
                 <div class="ham-menu-content">
                     <li><a href="#page-1"><img src="./img/nav/SVG_nav_music_white.svg" alt=""
-                                class="ham-content-svg"></a></li>
+                                class="ham-content-svg" onclick="hamclose()"></a></li>
                     <li><a href="#page-2"><img src="./img/nav/SVG_nav_about_white.svg" alt=""
-                                class="ham-content-svg"></a></li>
+                                class="ham-content-svg" onclick="hamclose()"></a></li>
                     <li><a href="#page-3"> <img src="./img/nav/SVG_nav_event_white.svg" alt=""
-                                class="ham-content-svg"></a></li>
+                                class="ham-content-svg" onclick="hamclose()"></a></li>
                     <li><a href="#page-4"> <img src="./img/nav/SVG_nav_invitation_white.svg" alt=""
-                                class="ham-content-svg"></a></li>
+                                class="ham-content-svg" onclick="hamclose()"></a></li>
                 </div>
                 <div class="ham-menu-icon">
                     <li><a href="https://m.facebook.com/HIGHLOCANDHENRY/"><img class="iconli" src="./img/icon_fb.svg"
@@ -527,6 +527,7 @@
     <script src="./about.js"></script>
     <script>
         // loading
+
         const load = document.getElementById('loading')
 
         load.addEventListener('animationend', function () {
@@ -554,12 +555,12 @@
 
         // 漢堡條
         const hamMenu = document.querySelector('.ham-menu')
-
         function clicked() {
             hamMenu.classList.toggle('act')
         }
-
-
+        function hamclose() {
+            hamMenu.classList.remove('act')
+        }
 
         // 活動方塊
         (function () {
