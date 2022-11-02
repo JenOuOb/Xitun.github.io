@@ -294,7 +294,7 @@ body::-webkit-scrollbar {
 #Gotop-photo {
     width: 82px;
     height: 127px;
-    @include phone-375(){
+    @include event-3(){
         display: none;
     }
 }
