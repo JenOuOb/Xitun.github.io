@@ -12,12 +12,53 @@
     overflow: hidden;
 }
 
+.music-side {
+    width: 160px;
+    margin-top: -800px;
+    margin-left: 90%;
+}
+
+@media (max-width: 1100px) {
+    .music-side {
+        width: 140px;
+    }
+}
+@media (max-width: 768px) {
+    .music-side {
+        width: 80px;
+    }
+}
+.music-side-ch {
+    width: 200px;
+    margin-top: -500px;
+}
+
+@media (max-width: 1100px) {
+    .music-side-ch {
+        width: 160px;
+    }
+}
+@media (max-width: 1000px) {
+    .music-side-ch {
+        width: 120px;
+    }
+}
+@media (max-width: 768px) {
+    .music-side-ch {
+        width: 80px;
+    }
+}
+
+
+
+
 .ep {
     margin: auto;
     margin-top: 700px;
+    position: relative;
 }
 
- @media (max-width: 1500px) {
+@media (max-width: 1500px) {
     .ep {
         margin-top: 500px;
     }
@@ -30,18 +71,21 @@
     }
 
 }
+
 @media (max-width: 1000px) {
     .ep {
         margin-top: 320px;
     }
 
 }
+
 @media (max-width: 900px) {
     .ep {
         margin-top: 330px;
     }
 
 }
+
 @media (max-width: 780px) {
     .ep {
         margin-top: 250px;
