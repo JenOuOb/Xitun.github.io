@@ -237,10 +237,10 @@
 
     .schedule #iconCar {
         width: 80%;
-        height: 400px;
+        height: 200px;
         position: absolute;
         left: -10%;
-        bottom: -5%;
+        bottom: -20%;
     }
 
     .schedule #lineimg {
@@ -296,7 +296,7 @@
         position: absolute;
         left: 10%;
         bottom: -10%;
-        transform: translateY(180%);
+        transform: translateY(220%);
     }
 }
 
@@ -319,7 +319,7 @@
 
 @media (max-width: 768px) and (min-width: 375px) {
     .footer-box {
-        margin-top: 500px;
+        margin-top: 350px;
     }
 
     .schedule #mailtext {

@@ -311,6 +311,12 @@
   height: calc(40 * var(--pv));
   text-align: center;
   margin-right: 15px;
+  
+
+}
+
+.about-mousehover:hover{
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
