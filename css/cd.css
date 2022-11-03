@@ -13,24 +13,79 @@
 }
 
 .music-side {
-    width: 160px;
-    margin-top: -800px;
-    margin-left: 90%;
+    position: absolute;
+    width: 150px;
+    transform: translateY(70%);
+    margin-left: 85%;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .music-side {
-        width: 140px;
+        width: 135px;
+        transform: translateY(60%);
     }
 }
+
+@media (max-width: 880px) {
+    .music-side {
+        transform: translateY(30%);
+        width: 100px;
+    }
+}
+
 @media (max-width: 768px) {
     .music-side {
         width: 80px;
     }
 }
+
+.music-side-more {
+    position: absolute;
+    width: 400px;
+    transform: translateY(-300%);
+    margin-left: 60%;
+}
+
+@media (max-width: 1200px) {
+    .music-side-more {
+        margin-left: 55%;
+        width: 300px;
+    }
+}
+
+@media (max-width: 880px) {
+    .music-side-more {
+        width: 250px;
+        transform: translateY(-220%);
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    .music-side-more {
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    .music-side-more {
+        width: 130px;
+    }
+}
+
+.music-side-more:hover {
+    opacity: 0.6;
+}
+
+
+
+
+
+
 .music-side-ch {
+    position: absolute;
     width: 200px;
-    margin-top: -500px;
+    transform: translateY(-100%);
 }
 
 @media (max-width: 1100px) {
@@ -38,14 +93,17 @@
         width: 160px;
     }
 }
+
 @media (max-width: 1000px) {
     .music-side-ch {
         width: 120px;
     }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 780px) {
     .music-side-ch {
         width: 80px;
+        transform: translateY(-130%);
     }
 }
 
