@@ -108,6 +108,38 @@
 }
 
 
+.music-mic {
+    position: absolute;
+    width: calc(400 * var(--pv));
+    transform: translateY(-50%);
+    margin-left: 10%;
+}
+
+.music-radio {
+    position: absolute;
+    width: calc(400 * var(--pv));
+    transform: translateY(-180%);
+    margin-left: 10%;
+}
+@media (max-width:780px){
+    .music-radio{
+        width: 150px;
+        margin-left: 5%;
+    }
+}
+@media (max-width:500px){
+    .music-radio{
+        transform: translateY(-150%);
+        margin-left: 0%;
+    }
+}
+
+
+
+
+
+
+
 
 
 .ep {
