@@ -204,7 +204,9 @@
     padding-left: 50px;
     font-size: 14px;
 }
-
+.footer-hover:hover{
+    transform: scale(1.2);
+}
 
 
 @media (max-width: 1815px) {
