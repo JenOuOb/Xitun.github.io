@@ -1,7 +1,7 @@
 
 .person{
-  width: 1920px;
-  height: 1080px;
+  width: calc(1920 * var(--pv));
+  height: calc(1080 * var(--pv));
 }
 .person-big {
   position: relative;
@@ -36,10 +36,22 @@
     height: 812px;
   }
 }
+@media (max-width: 450px){
+  .person-big{
+    width:450px;
+    height: 812px;
+  }
+}
 
 @media (max-width: 425px){
   .person-big{
     width:425px;
+    height: 812px;
+  }
+}
+@media (max-width: 400px){
+  .person-big{
+    width:400px;
     height: 812px;
   }
 }
@@ -87,14 +99,24 @@
     height: 812px;
   }
 }
-
+@media (max-width: 450px){
+  .person{
+    width:450px;
+    height: 812px;
+  }
+}
 @media (max-width: 425px){
   .person{
     width:425px;
     height: 812px;
   }
 }
-
+@media (max-width:400px) {
+  .person{
+    width:400px;
+    height: 812px;
+  }
+}
 @media (max-width:375px) {
   .person{
     width:375px;

@@ -92,7 +92,7 @@
     <!-- 雜訊 -->
     <div class="bg-noise"></div>
 
-    <nav id="nav" style="overflow: hidden;">
+    <nav>
         <div class="navall">
             <ul class="logo">
                 <a href="#"><img src="./img/西屯純愛LOGO.png" alt="" id="logophoto"></a>
@@ -132,12 +132,12 @@
                     <img src="./img/close-svgrepo-com.svg" alt="" class="ham-btn-close" onclick="clicked()">
                 </div>
                 <div class="ham-menu-content">
-                    <li><a href="#page-1"><img src="./img/nav/SVG_nav_music_white.svg" alt=""
-                                class="ham-content-svg" onclick="hamclose()"></a></li>
-                    <li><a href="#page-2"><img src="./img/nav/SVG_nav_about_white.svg" alt=""
-                                class="ham-content-svg" onclick="hamclose()"></a></li>
-                    <li><a href="#page-3"> <img src="./img/nav/SVG_nav_event_white.svg" alt=""
-                                class="ham-content-svg" onclick="hamclose()"></a></li>
+                    <li><a href="#page-1"><img src="./img/nav/SVG_nav_music_white.svg" alt="" class="ham-content-svg"
+                                onclick="hamclose()"></a></li>
+                    <li><a href="#page-2"><img src="./img/nav/SVG_nav_about_white.svg" alt="" class="ham-content-svg"
+                                onclick="hamclose()"></a></li>
+                    <li><a href="#page-3"> <img src="./img/nav/SVG_nav_event_white.svg" alt="" class="ham-content-svg"
+                                onclick="hamclose()"></a></li>
                     <li><a href="#page-4"> <img src="./img/nav/SVG_nav_invitation_white.svg" alt=""
                                 class="ham-content-svg" onclick="hamclose()"></a></li>
                 </div>
@@ -205,21 +205,22 @@
 
 
         <!-- 個人介紹 -->
-        <div class="person-big" style="overflow: hidden;">
-            <div class="person">
-                <div class="person-images">
-                    <div class="person-img-1"></div>
-                    <div class="person-img-2"></div>
-                </div>
-                <div class="slider">
-                    <div class="drag-line">
-                        <span></span>
+        <div class="person" style="overflow: hidden;">
+            <div class="person-big">
+                <div class="person">
+                    <div class="person-images">
+                        <div class="person-img-1"></div>
+                        <div class="person-img-2"></div>
                     </div>
-                    <input type="range" min="0" max="100" value="50">
+                    <div class="slider">
+                        <div class="drag-line">
+                            <span></span>
+                        </div>
+                        <input type="range" min="0" max="100" value="50">
+                    </div>
                 </div>
             </div>
         </div>
-
 
 
 
@@ -319,7 +320,7 @@
 
 
         <!-- 關於區域 -->
-        <div class="about scroll-page"  id="page-2">
+        <div class="about scroll-page" id="page-2">
             <div class="about-container">
                 <div class="about-main">
                     <!-- 關於 aboout 大標的圖片 -->
@@ -335,7 +336,7 @@
                             <div class="name-highloc"></div>
                         </div>
                     </div>
-    
+
                     <!-- henry  (色塊 人 名)-->
                     <div class="about-henry">
                         <div class="box-red">
@@ -343,10 +344,10 @@
                             <div class="name-henry"></div>
                         </div>
                     </div>
-    
+
                     <!-- 中間字體 -->
                     <div class="about-center-content">
-                        <div class="about-text" >
+                        <div class="about-text">
                             <span id="btn-origin" class="about-mousehover">建團起源</span>
                             <span id="btn-experience" class="about-mousehover">演出經歷</span>
                             <span id="btn-cooperation" class="about-mousehover">音樂合作</span>
@@ -354,18 +355,19 @@
                         <!-- 外部連結 -->
                         <div class="about-link">
                             <a href="https://www.facebook.com/HIGHLOCANDHENRY/"><img src="./img/icon_fb.svg"
-                                    alt="facebook"  class="about-mousehover"></a>
-                            <a href="https://www.instagram.com/highlocandhenry/" ><img src="./img/icon_ig_about.svg"
-                                    alt="instagram" id="about-ig"  class="about-mousehover"></a>
+                                    alt="facebook" class="about-mousehover"></a>
+                            <a href="https://www.instagram.com/highlocandhenry/"><img src="./img/icon_ig_about.svg"
+                                    alt="instagram" id="about-ig" class="about-mousehover"></a>
                             <a href="https://www.youtube.com/channel/UCp0ogU9BUkTSVLwyv-44T2w/featured"><img
-                                    src="./img/icon_yt.svg" alt="youtube"  class="about-mousehover"></a>
-                            <a href="facebook.com"><img src="./img/icon_cart.svg" alt="facebook"  class="about-mousehover"></a>
+                                    src="./img/icon_yt.svg" alt="youtube" class="about-mousehover"></a>
+                            <a href="facebook.com"><img src="./img/icon_cart.svg" alt="facebook"
+                                    class="about-mousehover"></a>
                         </div>
                     </div>
                     <!-- 背景塗鴉小圖片 -->
                     <div class="about-draw">
                         <img id="content-header" src="./img/SVG_logo_new.svg" alt="logo">
-    
+
                         <img id="content-ya" src="./img/SVG_draw_ya.png" alt="ya" width="321" height="294px">
                     </div>
                 </div>
@@ -379,42 +381,42 @@
                     <div class="modal-close-btn"><img src="./img/about/icon_close_white.svg" alt="x">
                     </div>
                 </div>
-    
+
                 <div id="modal-experience">
                     <h2 class="modal-title">演出經歷</h2>
                     <div class="modal-content">
-                        2022 RedBull Taiwan 飛行日 選手之夜<br/>
-                        2022 台中刺青展<br/>
-                        2022 喔北搖音樂節<br/>
-                        2022 台秋祭<br/>
-                        2022 台灣祭<br/>
-                        2022 山城生活節<br/>
-                        2022 MTV得理不饒人演唱會<br/>
-                        2022 Dickies 旗艦店開幕演出<br/>
-                        2021 台秋西提 都會派對<br/>
-                        2021 山城生活節<br/>
-                        2021 國安好宅開工Party<br/>
-                        2020 搖滾連續祭<br/>
-                        2019 龍虎門返校音樂節<br/>
-                        2019 大黑熊部落<br/>
-                        2018 黑熊部落<br/>
-                        2018 大放槍籃球賽 中場演出<br/>
-                        2018 飄遊者音樂節<br/></div>
+                        2022 RedBull Taiwan 飛行日 選手之夜<br />
+                        2022 台中刺青展<br />
+                        2022 喔北搖音樂節<br />
+                        2022 台秋祭<br />
+                        2022 台灣祭<br />
+                        2022 山城生活節<br />
+                        2022 MTV得理不饒人演唱會<br />
+                        2022 Dickies 旗艦店開幕演出<br />
+                        2021 台秋西提 都會派對<br />
+                        2021 山城生活節<br />
+                        2021 國安好宅開工Party<br />
+                        2020 搖滾連續祭<br />
+                        2019 龍虎門返校音樂節<br />
+                        2019 大黑熊部落<br />
+                        2018 黑熊部落<br />
+                        2018 大放槍籃球賽 中場演出<br />
+                        2018 飄遊者音樂節<br /></div>
                     <div class="modal-close-btn"><img src="./img/about/icon_close_white.svg" alt="x">
                     </div>
                 </div>
-    
+
                 <div id="modal-cooperation">
                     <h2 class="modal-title">音樂合作</h2>
                     <div class="modal-content">
-                        2022 MENACE II SOCIETY 攜手蛋頭BG8LOCC<br/>
-                        2022 鄉下來的Remix 與玖壹壹一同參與創作<br/>
-                        2022 Still Here Dickies 100 週年企劃單曲<br/>
-                        2022 狼魂「閃電狼戰隊」2022 主題曲<br/>
-                        2021 Taichill City G'z  feat. 夏沐<br/>
-                        2021 壞南孩 Down South Boys  攜手Barry Chen 合作南岸音樂<br/>
-                        2020 想和妳再一次 feat. Veronica Lin<br/>
-                        2020 台灣製造 feat.  L.C小光<br/>
+                        2022 MENACE II SOCIETY 攜手蛋頭BG8LOCC<br />
+                        2022 鄉下來的Remix 與玖壹壹一同參與創作<br />
+                        2022 Still Here Dickies 100 週年企劃單曲<br />
+                        2022 狼魂「閃電狼戰隊」2022 主題曲<br />
+                        2021 Taichill City G'z feat. 夏沐<br />
+                        2021 壞南孩 Down South Boys 攜手Barry Chen 合作南岸音樂<br />
+                        2020 想和妳再一次 feat. Veronica Lin<br />
+                        2020 台灣製造 feat. L.C小光<br />
                     </div>
                     <div class="modal-close-btn"><img src="./img/about/icon_close_white.svg" alt="x">
                     </div>
@@ -512,10 +514,10 @@
                 <img src="./invitationPHOTO/icon_ig (1).svg" alt="IG連結的ICON" height="29px">
             </a>
             <a href="https://www.youtube.com/channel/UCp0ogU9BUkTSVLwyv-44T2w" target="_blank">
-                <img src="./invitationPHOTO/icon_yt.svg" alt="YOUTUBE連結的ICON" height="38px" >
+                <img src="./invitationPHOTO/icon_yt.svg" alt="YOUTUBE連結的ICON" height="38px">
             </a>
             <a href="https://www.fireonshop.com/" target="_blank">
-                <img src="./invitationPHOTO/icon_cart (1).svg" alt="實體專輯的購物車連結ICON" height="31px" >
+                <img src="./invitationPHOTO/icon_cart (1).svg" alt="實體專輯的購物車連結ICON" height="31px">
             </a>
         </div>
         <div class="text">
