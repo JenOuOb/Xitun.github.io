@@ -401,9 +401,24 @@
   #content-ya {
     width: calc(112 * var(--mu) * var(--ph));
     height: calc(102 * var(--mu) * var(--ph));
-    top: calc(1037 * var(--mu) * var(--ph));
+    top: calc(700 * var(--mu) * var(--ph));
     left: calc(34 * var(--mu) * var(--ph));
     z-index: 1;
+  }
+}
+@media (max-width: 660px) {
+  #content-ya {
+    top: calc(650 * var(--mu) * var(--ph));
+  }
+}
+@media (max-width: 560px) {
+  #content-ya {
+    top: calc(650 * var(--mu) * var(--ph));
+  }
+}
+@media (max-width: 460px) {
+  #content-ya {
+    top: calc(660 * var(--mu) * var(--ph));
   }
 }
 
