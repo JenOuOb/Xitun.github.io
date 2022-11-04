@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>好氣氛</title>
     <link rel="stylesheet" href="./css/audio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
         * {
             box-sizing: border-box;
@@ -15,7 +17,7 @@
         }
 
         .detail {
-            width: 100vw;
+            width: 100%;
             height: 100vh;
             display: flex;
         }
@@ -131,7 +133,7 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: 700;
                 font-size: 36px;
-                line-height: 45px;
+                line-height: 50px;
                 letter-spacing: 0.1em;
                 color: #FFFFFF;
             }
@@ -173,7 +175,6 @@
                 letter-spacing: 0.1em;
                 color: #FFFFFF;
             }
-
 
             .ep1-text p {
                 font-weight: 400;
@@ -352,6 +353,7 @@
                 background-color: #0439D9;
                 display: flex;
             }
+           
 
             .detail-rbc img {
                 margin: auto;
@@ -375,11 +377,80 @@
             }
 
         }
+
+        .hintbox {
+            position: fixed;
+            z-index: 10;
+            width: 100vw;
+            height: 100vh;
+         
+            display: flex;
+        }
+
+        .hintbox .mask{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            opacity: 0.6;
+            z-index: -1;
+        }
+
+        #linebox{
+            margin: auto;
+            width: 30%;
+            height: 30%;
+            background-color: #8a8cc9;
+            border-radius: 20px;
+            position: relative;
+           
+        }
+
+        @media (max-width: 600px){
+            #linebox{
+            width: 50%;
+            height: 20%;
+            font-size: 14px;
+        }  
+            }
+        .linebox-box h2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            white-space:nowrap;
+            
+           
+        }
+       
+      
+        .qrcode-close{
+            width: 50px;
+            position: absolute;
+            bottom:10%;
+            right:5%;
+          
+        }
     </style>
+
 </head>
 
 <body>
     <div class="detail">
+        
+        <!-- 彈窗 -->
+        <div class="hintbox show-dialog" >
+            <div class="mask"></div>
+            <!-- linebox-bg 視窗內背景 -->
+            <div class="linebox-box" id="linebox">
+                <h2>⚠音量注意⚠</h2>
+                <button type="button" class="qrcode-close" onclick="closewindow()">確定</button>
+            </div>
+            
+        </div>
+        <!-- 彈窗 -->
+        <!-- 音量注意 -->
+
 
         <div class="detail-left">
             <img src="./cd/cont/cd-好氣氛(1) (2).jpg" alt="">
@@ -389,7 +460,7 @@
             <div class="detail-right-left">
                 <div class="detail-left-top">
                     <div class="ep1-text">
-                        <h2 class="ep-1-title">好氣氛</h2>
+                        <h2>好氣氛</h2>
                         <br>
                         <p>每一次純愛組的專輯中總會有一首夏日歌曲，這首鬆度翩翩就是本張專輯的夏日主打，由製作人 Kuma 編曲的 G-Funk 旋律，找來了我們的老朋友夏沐，繼夏夕夏景後再次合作 another
                             summertime anthem</p>
@@ -415,7 +486,6 @@
                     </div>
 
                 </div>
-
             </div>
 
             <div class="detail-right-right">
@@ -454,7 +524,7 @@
                 <div class="detail-right-down">
                     <div class="detail-rbc">
                         <img class="im1" src="./cd/icon/icon_stopmusic.svg" alt="">
-                        <audio control autoplay loop id="music1">
+                        <audio id="music1" loop>
                             <source src="./音檔片段/好氣氛 MASTER FINAL 1005_01.wav">
                         </audio>
                     </div>
@@ -463,7 +533,6 @@
                             <img src="./cd/icon/SVG_draw_goback.svg" alt="">
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -474,6 +543,16 @@
         var muc = document.querySelector('#music1')
         var st = 0
 
+        //彈窗本身
+        const openbtn = document.querySelector('.qrcode-open')
+        const closebtn = document.querySelector('.qrcode-close')
+        const hintwindow = document.querySelector('.hintbox')
+        function closewindow(){
+            hintwindow.style.display = 'none'
+            muc.play()
+        }
+
+        //-------------------------------------------------------------------------
 
         ep1.onclick = function () {
             if (st == 0) {
@@ -487,8 +566,18 @@
             }
 
         }
-
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })</script>
 
 
 </body>

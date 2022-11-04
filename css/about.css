@@ -4,7 +4,7 @@
   --pv: calc(100vw / 1920);
   --ph: calc(100vw / 768);
 }
-
+abouy
 * {
   box-sizing: border-box;
 }
@@ -23,7 +23,7 @@
 @media (max-width: 768px) {
   .about {
     height: 100%;
-    /* margin-bottom: 50vh; */
+    margin-bottom:80px;
   }
 }
 
@@ -40,11 +40,6 @@
   .about-container {
     height: calc(746 * var(--mu) * var(--ph));
   }
-
-  .about {
-    margin-bottom: 50vh;
-  }
-
 }
 
 .about-main {
