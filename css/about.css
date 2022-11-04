@@ -19,6 +19,7 @@ abouy * {
   width: 100%;
   height: calc(1080 * var(--pv));
   position: relative;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {

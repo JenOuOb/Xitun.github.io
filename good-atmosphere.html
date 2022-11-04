@@ -353,7 +353,7 @@
                 background-color: #0439D9;
                 display: flex;
             }
-           
+
 
             .detail-rbc img {
                 margin: auto;
@@ -383,11 +383,11 @@
             z-index: 10;
             width: 100vw;
             height: 100vh;
-         
+
             display: flex;
         }
 
-        .hintbox .mask{
+        .hintbox .mask {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -396,40 +396,41 @@
             z-index: -1;
         }
 
-        #linebox{
+        #linebox {
             margin: auto;
             width: 30%;
             height: 30%;
             background-color: #8a8cc9;
             border-radius: 20px;
             position: relative;
-           
+
         }
 
-        @media (max-width: 600px){
-            #linebox{
-            width: 50%;
-            height: 20%;
-            font-size: 14px;
-        }  
+        @media (max-width: 600px) {
+            #linebox {
+                width: 50%;
+                height: 20%;
+                font-size: 14px;
             }
-        .linebox-box h2{
+        }
+
+        .linebox-box h2 {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
-            white-space:nowrap;
-            
-           
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+
+
         }
-       
-      
-        .qrcode-close{
+
+
+        .qrcode-close {
             width: 50px;
             position: absolute;
-            bottom:10%;
-            right:5%;
-          
+            bottom: 10%;
+            right: 5%;
+
         }
     </style>
 
@@ -437,16 +438,16 @@
 
 <body>
     <div class="detail">
-        
+
         <!-- 彈窗 -->
-        <div class="hintbox show-dialog" >
+        <div class="hintbox show-dialog">
             <div class="mask"></div>
             <!-- linebox-bg 視窗內背景 -->
             <div class="linebox-box" id="linebox">
                 <h2>⚠音量注意⚠</h2>
                 <button type="button" class="qrcode-close" onclick="closewindow()">確定</button>
             </div>
-            
+
         </div>
         <!-- 彈窗 -->
         <!-- 音量注意 -->
@@ -547,7 +548,7 @@
         const openbtn = document.querySelector('.qrcode-open')
         const closebtn = document.querySelector('.qrcode-close')
         const hintwindow = document.querySelector('.hintbox')
-        function closewindow(){
+        function closewindow() {
             hintwindow.style.display = 'none'
             muc.play()
         }
@@ -574,10 +575,7 @@
     <script>
         const myModal = document.getElementById('myModal')
         const myInput = document.getElementById('myInput')
-
-        myModal.addEventListener('shown.bs.modal', () => {
-            myInput.focus()
-        })</script>
+    </script>
 
 
 </body>
