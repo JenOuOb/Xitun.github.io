@@ -519,6 +519,7 @@ abouy * {
   #modal-experience {
     width: 375px;
     height: 350px;
+    transform: translate(-90px, 10px)
   }
 }
 
@@ -539,6 +540,7 @@ abouy * {
   #modal-cooperation {
     width: 370px;
     height: 350px;
+    transform: translate(-68px, 10px)
   }
 }
 
