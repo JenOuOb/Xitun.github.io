@@ -2,6 +2,7 @@
 .person{
   width: calc(1920 * var(--pv));
   height: calc(1080 * var(--pv));
+  overflow: hidden;
 }
 .person-big {
   position: relative;
