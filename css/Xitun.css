@@ -824,12 +824,7 @@ nav .navall .nav-menu .navli-2:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -52%);
-}
-@media (max-width: 550px) {
-  .event .event-content-center {
-    transform: translate(-50%, -55%);
-  }
+  transform: translate(-50%, -48%);
 }
 .event .event-content-center .state {
   perspective: 1000px;

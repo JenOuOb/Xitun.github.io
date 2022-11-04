@@ -792,6 +792,7 @@ nav {
     justify-content: center;
     align-items: flex-end;
 
+
     @include phone-375() {
         height: 226px;
         width: 100%;
@@ -833,11 +834,7 @@ nav {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -52%);
-
-        @include event-3() {
-            transform: translate(-50%, -55%);
-        }
+        transform: translate(-50%, -48%);
         .state {
             perspective: 1000px;
             position: relative;
