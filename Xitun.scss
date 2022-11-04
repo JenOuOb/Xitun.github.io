@@ -781,8 +781,17 @@ nav {
 }
 
 
-
-
+// 關於
+.about{
+    width: 100%;
+    height: calc(1080 * var(--pv));
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      height: 100%;
+    }
+  }
 
 
 

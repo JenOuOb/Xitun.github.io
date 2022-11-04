@@ -778,6 +778,16 @@ nav .navall .nav-menu .navli-2:hover {
   z-index: -20;
 }
 
+.about {
+  width: 100%;
+  height: calc(1080 * var(--pv));
+}
+
+@media (max-width: 768px) {
+  .about {
+    height: 100%;
+  }
+}
 .event {
   display: flex;
   width: 100%;
