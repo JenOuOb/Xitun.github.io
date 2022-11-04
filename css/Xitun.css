@@ -254,7 +254,7 @@ body::-webkit-scrollbar {
   width: 82px;
   height: 127px;
 }
-@media (max-width: 400px) {
+@media (max-width: 390px) {
   #Gotop-photo {
     display: none;
   }
