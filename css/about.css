@@ -13,12 +13,22 @@
   --mu: calc(768 / 375);
 }
 
+
+
 .about {
   width: 100%;
-  height: 100vh;
-  /* background-color: #BF0404; */
-position: relative;
+  height: calc(1080 * var(--pv));
+  position: relative;
 }
+@media (max-width: 768px) {
+  .about {
+    height: 100%;
+    /* margin-bottom: 50vh; */
+  }
+}
+
+
+
 
 .about-container {
   width: 100%;
@@ -30,10 +40,11 @@ position: relative;
   .about-container {
     height: calc(746 * var(--mu) * var(--ph));
   }
+
   .about {
-margin-bottom: 50vh;
+    margin-bottom: 50vh;
   }
-  
+
 }
 
 .about-main {
@@ -165,7 +176,7 @@ margin-bottom: 50vh;
   width: calc(800 * var(--pv));
   height: calc(123 * var(--pv));
   background-color: #BF0404;
-  position: absolute;
+  position: relative;
   top: calc(829 * var(--pv));
   left: calc(-9 * var(--pv));
 }
@@ -231,8 +242,9 @@ margin-bottom: 50vh;
   .about-henrypic {
     width: calc(100 * var(--mu) * var(--ph));
     height: calc(221.38 * var(--mu) * var(--ph));
-    top:-50%;
+    top: -50%;
     left: calc(100 * var(--mu) * var(--ph));
+    transform: translateY(-63%);
   }
 }
 
@@ -430,40 +442,11 @@ margin-bottom: 50vh;
   #content-ya {
     width: calc(112 * var(--mu) * var(--ph));
     height: calc(102 * var(--mu) * var(--ph));
-    top: calc(700 * var(--mu) * var(--ph));
+    top: calc(615 * var(--mu) * var(--ph));
     left: calc(34 * var(--mu) * var(--ph));
     z-index: 1;
   }
 }
-
-@media (max-width: 660px) {
-  #content-ya {
-    top: calc(650 * var(--mu) * var(--ph));
-  }
-}
-
-@media (max-width: 560px) {
-  #content-ya {
-    top: calc(650 * var(--mu) * var(--ph));
-  }
-}
-
-@media (max-width: 460px) {
-  #content-ya {
-    top: calc(660 * var(--mu) * var(--ph));
-  }
-}
-
-/* 最大父層彈跳視窗 */
-/* #about-modal {
-  width: 100%;
-  height: 100vh;
-  z-index: 3;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
-border: #BF0404 5px solid;
-} */
 
 .about-modal {
   display: none;
@@ -496,7 +479,8 @@ border: #BF0404 5px solid;
 
 @media (max-width: 768px) {
   #modal-origin {
-    width: 345px;
+    transform: translate(-90px, 10px);
+    width: 300px;
     height: 350px;
   }
 }
@@ -549,8 +533,8 @@ border: #BF0404 5px solid;
 
 
 .modal-close-btn {
-  width:10%;
-  height:200px;
+  width: 10%;
+  height: 200px;
   position: absolute;
   right: 5%;
   top: 27px;
