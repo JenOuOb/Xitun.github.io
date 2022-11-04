@@ -43,10 +43,22 @@
     height: 812px;
   }
 }
+@media (max-width: 440px){
+  .person-big{
+    width:440px;
+    height: 812px;
+  }
+}
 
 @media (max-width: 425px){
   .person-big{
     width:425px;
+    height: 812px;
+  }
+}
+@media (max-width: 410px){
+  .person-big{
+    width:410px;
     height: 812px;
   }
 }
@@ -106,9 +118,21 @@
     height: 812px;
   }
 }
+@media (max-width: 440px){
+  .person{
+    width:440px;
+    height: 812px;
+  }
+}
 @media (max-width: 425px){
   .person{
     width:425px;
+    height: 812px;
+  }
+}
+@media (max-width:410px) {
+  .person{
+    width:410px;
     height: 812px;
   }
 }
