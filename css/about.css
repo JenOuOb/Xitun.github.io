@@ -388,7 +388,12 @@ abouy
     left: calc(240 * var(--mu) * var(--ph));
   }
 }
-
+@media (max-width: 500px) {
+  .about-link {
+    top: calc(452 * var(--mu) * var(--ph));
+    left: calc(234 * var(--mu) * var(--ph));
+  }
+}
 @media (max-width: 425px) {
   .about-link {
     top: calc(490 * var(--mu) * var(--ph));
