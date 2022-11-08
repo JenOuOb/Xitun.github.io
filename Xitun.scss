@@ -294,7 +294,8 @@ body::-webkit-scrollbar {
 #Gotop-photo {
     width: 82px;
     height: 127px;
-    @include event-3(){
+
+    @include event-3() {
         display: none;
     }
 }
@@ -376,7 +377,7 @@ nav {
         align-items: center;
         justify-content: space-between;
 
-        @include event(){
+        @include event() {
             width: 100%;
             justify-content: center;
         }
@@ -492,16 +493,18 @@ nav {
     transform: translateY(-100%);
     transition: 0.5s;
     z-index: 999;
-    .ham-menu-nav{
+
+    .ham-menu-nav {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 80px;
 
-        .ham-logo{
+        .ham-logo {
             width: 150px;
             height: 46.88px;
         }
+
         .ham-btn-close {
             position: absolute;
             top: 15%;
@@ -510,29 +513,34 @@ nav {
             transform: translate(0, -50%);
         }
     }
-    .ham-menu-content{
+
+    .ham-menu-content {
         height: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        .ham-content-svg{
+
+        .ham-content-svg {
             height: 25px;
         }
-        .ham-content-svg:hover{
+
+        .ham-content-svg:hover {
             transform: scale(1.2);
         }
     }
-    .ham-menu-icon{
+
+    .ham-menu-icon {
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
         height: 70px;
-        .iconli{
+
+        .iconli {
             height: 35px;
             width: 35px;
         }
-        
+
     }
 }
 
@@ -543,7 +551,8 @@ nav {
     right: 20px;
     width: 30px;
     transform: translate(0, -60%);
-    @include nav-icon(){
+
+    @include nav-icon() {
         display: block;
     }
 }
@@ -767,12 +776,15 @@ nav {
         .mover-2 {
             height: 100%;
         }
+
         .mover-3 {
             height: 100%;
         }
+
         .mover-4 {
             height: 100%;
         }
+
         #sceoll-photo {
             height: 100%;
             z-index: -20;
@@ -815,10 +827,11 @@ nav {
         width: 9%;
         position: absolute;
         top: 0;
-        left: 0%;
         transform: translate(0%, -10%);
+        z-index: -1;
 
         @include phone() {
+            width: 80px;
             left: 0;
         }
     }
@@ -826,15 +839,24 @@ nav {
     #event-photo {
         width: 8%;
         position: absolute;
-        left: calc(100% - 8%);
-        top: 35%;
+        margin-left: 92%;
+        transform: translateY(-110%);
+        z-index: -1;
+        right: 0%;
+
+        @include phone() {
+            width: 70px;
+            transform: translateY(-80%);
+        }
     }
+
 
     .event-content-center {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -48%);
+
         .state {
             perspective: 1000px;
             position: relative;

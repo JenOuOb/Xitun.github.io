@@ -806,19 +806,28 @@ nav .navall .nav-menu .navli-2:hover {
   width: 9%;
   position: absolute;
   top: 0;
-  left: 0%;
   transform: translate(0%, -10%);
+  z-index: -1;
 }
 @media (max-width: 768px) {
   .event #event-photo-ch {
+    width: 80px;
     left: 0;
   }
 }
 .event #event-photo {
   width: 8%;
   position: absolute;
-  left: 92%;
-  top: 35%;
+  margin-left: 92%;
+  transform: translateY(-110%);
+  z-index: -1;
+  right: 0%;
+}
+@media (max-width: 768px) {
+  .event #event-photo {
+    width: 70px;
+    transform: translateY(-80%);
+  }
 }
 .event .event-content-center {
   position: absolute;
